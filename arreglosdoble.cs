@@ -6,7 +6,7 @@ namespace arreglodoble
     public static void Main(string[] args)
     {
       Console.WriteLine("Declara la tabla");
-      int [] tabla = declareTable(5,4);
+      int [,] tabla = declareTable(5,4);
 
       Console.WriteLine("Lee el valor (2,3) en la matriz");
       readTableCell(tabla,2,3);
@@ -16,7 +16,7 @@ namespace arreglodoble
       int[,] matriz = new int [rows,columns];
       for (int i=0;i <rows;i++)
       {
-        for (int j=0; i<columns; i++)
+        for (int j=0; j<columns; j++)
         {
           Console.WriteLine(matriz[i,j]);
         }
@@ -39,4 +39,3 @@ namespace arreglodoble
 
     }
   }
-}
